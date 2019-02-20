@@ -1,5 +1,4 @@
 import React from 'react'
-import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { Container, Button } from 'Common'
 import dev from 'Static/illustrations/activity.svg'
 import { Wrapper, SkillsWrapper, Details, Thumbnail } from './styles'
@@ -11,7 +10,7 @@ export const Skills = () => (
 				<img src={dev} alt="Charts illustration. Everybody loves charts." />
 			</Thumbnail>
 			<Details>
-				<h1>Still Reading?</h1>
+				<h1>Want to know more?</h1>
 				<p>
 					I've spent well over a decade working the interwebs: as a project manager, digital marketer, writer, and front-end web developer.
 				</p>
