@@ -7,7 +7,7 @@ export const Footer = () => (
 	<Wrapper>
 		<Flex as={Container}>
 			<Details>
-				<h2>John Doe</h2>
+				<h2>Dave Kensell</h2>
 				<span>
 					© All rights are reserved | {new Date().getFullYear()} | Made with{' '}
 					<span aria-label="love" role="img">
@@ -15,11 +15,11 @@ export const Footer = () => (
 					</span>{' '}
 					by{' '}
 					<a
-						href="https://smakosh.com/?ref=portfolio-dev"
+						href="https://github.com/davidkensell"
 						rel="noopener noreferrer"
 						target="_blank"
 					>
-						Smakosh
+						Dave
 					</a>
 				</span>
 			</Details>
