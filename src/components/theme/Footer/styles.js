@@ -35,9 +35,9 @@ export const Links = styled.div`
 			margin: 0;
 		}
 
-		&:first-child,
-		&:last-child {
-			margin: 0;
+		// &:first-child,
+		// &:last-child {
+		// 	margin: 0;
 		}
 	}
 `
