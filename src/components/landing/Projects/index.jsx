@@ -10,7 +10,7 @@ export const Projects = () => (
 		query={graphql`
 			{
 				github {
-					repositoryOwner(login: "smakosh") {
+					repositoryOwner(login: "davidkensell") {
 						repositories(
 							first: 8
 							orderBy: { field: STARGAZERS, direction: DESC }
@@ -21,6 +21,19 @@ export const Projects = () => (
 									name
 									url
 									description
+					                languages(
+					                	first:5
+					                	orderBy: { field: SIZE, direction: DESC }
+					                	) {
+						                    edges {
+						                      node {
+						                      	id
+						                        name
+						                        color
+						                      }
+						                    }
+						                  }
+									homepageUrl
 									stargazers {
 										totalCount
 									}
@@ -40,7 +53,7 @@ export const Projects = () => (
 			},
 		}) => (
 			<Wrapper as={Container} id="projects">
-				<h2>Projects</h2>
+				<h2>Public Projects</h2>
 				<Grid>
 					{edges.map(({ node }) => (
 						<Item
@@ -54,16 +67,14 @@ export const Projects = () => (
 								<Content>
 									<h4>{node.name}</h4>
 									<p>{node.description}</p>
+									<p>
+										{node.languages.edges.map(({ node }) => (
+											<span key={node.id} style={{ color: node.color }}>{node.name} </span>
+										))}
+									</p>
 								</Content>
 								<Stats>
-									<div>
-										<img src={starIcon} alt="stars" />
-										<span>{node.stargazers.totalCount}</span>
-									</div>
-									<div>
-										<img src={forkIcon} alt="forks" />
-										<span>{node.forkCount}</span>
-									</div>
+									{node.homepageUrl && <p><a href={node.homepageUrl}>demo</a></p>}
 								</Stats>
 							</Card>
 						</Item>
