@@ -21,6 +21,8 @@ const ContactForm = ({
 		data-netlify-recaptcha="true"
 		data-netlify-honeypot="bot-field"
 	>
+		{/* gatsby strips unused input, adding hidden form-name to see if works */}
+		<input type="hidden" name="form-name" value="portfolio-dev" />
 		<InputField>
 			<Input
 				as={FastField}

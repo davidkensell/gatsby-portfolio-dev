@@ -35,6 +35,7 @@ export const Links = styled.div`
 			margin: 0;
 		}
 
+		// Bring back if have more than 2 icons
 		// &:first-child,
 		// &:last-child {
 		// 	margin: 0;
