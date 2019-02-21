@@ -31,5 +31,5 @@ module.exports = {
 		phone: '555-555-5555',
 	},
 	foundingDate: '2019',
-	recaptcha_key: '6LetUpIUAAAAAGNjsBMfBQ9bZZYzy97TFNBxfCc9',
+	recaptcha_key: '6Le7FZMUAAAAAN60lSdEstAXtqpZQz6YP1Ijy7SA',
 }
