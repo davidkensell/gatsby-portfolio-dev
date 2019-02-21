@@ -23,6 +23,7 @@ const ContactForm = ({
 	>
 		{/* gatsby strips unused input, adding hidden form-name to see if works */}
 		<input type="hidden" name="form-name" value="portfolio-dev" />
+		<p style={{ display: 'none' }}> <input name="bot-field" /> </p>
 		<InputField>
 			<Input
 				as={FastField}
