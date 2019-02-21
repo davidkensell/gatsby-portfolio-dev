@@ -1,10 +1,10 @@
 module.exports = {
-	defaultTitle: 'David Kensell',
-	logo: 'https://davidkensell.com/favicon/favicon.ico',
+	defaultTitle: 'David Kensell, LA based front-end web developer',
+	logo: 'https://www.davidkensell.com/favicon/favicon.ico',
 	author: 'David Kensell',
-	url: 'https://davidkensell.com',
+	url: 'https://www.davidkensell.com',
 	legalName: 'David Kensell',
-	defaultDescription: 'I’m Dave, your friendly neighborhood Web Dev!',
+	defaultDescription: 'It\'s Dave! Los Angeles based front-end web developer (Javascript! React! Ruby! Static sites! Mobile responsiveness!) with decade+ in the Internet biz.',
 	socialLinks: {
 		twitter: '',
 		github: 'https://github.com/davidkensell',
@@ -31,5 +31,5 @@ module.exports = {
 		phone: '555-555-5555',
 	},
 	foundingDate: '2019',
-	SITE_RECAPTCHA_KEY: '6LetUpIUAAAAAGNjsBMfBQ9bZZYzy97TFNBxfCc9',
+	recaptcha_key: '6LetUpIUAAAAAGNjsBMfBQ9bZZYzy97TFNBxfCc9',
 }

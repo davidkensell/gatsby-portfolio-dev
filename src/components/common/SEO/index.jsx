@@ -17,7 +17,6 @@ import {
 export const SEO = ({
 	title = defaultTitle,
 	description = defaultDescription,
-	location = '',
 }) => {
 	const structuredDataOrganization = `{ 
 		"@context": "http://schema.org",
@@ -33,8 +32,7 @@ export const SEO = ({
 		"contactPoint": [{
 			"@type": "ContactPoint",
 			"email": "${contact.email}",
-			"telephone": "${contact.phone}",
-			"contactType": "customer service"
+			"contactType": "owner"
 		}],
 		"address": {
 			"@type": "PostalAddress",
@@ -58,7 +56,7 @@ export const SEO = ({
 			<meta name="description" content={description} />
 			<meta name="image" content={Thumbnail} />
 
-			<meta property="og:url" content={`${url}${location}/?ref=smakosh.com`} />
+			<meta property="og:url" content={`${url}`} />
 			<meta property="og:type" content="website" />
 			<meta property="og:title" content={title} />
 			<meta property="og:description" content={description} />
