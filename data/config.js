@@ -27,8 +27,8 @@ module.exports = {
 		zipCode: '90004',
 	},
 	contact: {
-		email: 'root@davidkensell.com',
-		phone: '555-555-5555',
+		email: 'dk@davidkensell.com',
+		phone: '',
 	},
 	foundingDate: '2019',
 	recaptcha_key: '6Le7FZMUAAAAAN60lSdEstAXtqpZQz6YP1Ijy7SA',
