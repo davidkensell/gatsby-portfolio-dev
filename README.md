@@ -50,10 +50,6 @@ Also personalization of text, meta, favicon, social media, etc.
 └── static                  # Icons, favicon & SVG illustrations
 ```
 
-## Cloning
-
-If you want to use this template yourself, you may wish to review the upstream [Smakosh template](https://github.com/smakosh/gatsby-portfolio-dev) first. 
-
 ## Prerequisites
 
 [Yarn](https://yarnpkg.com/en/)
@@ -95,13 +91,13 @@ GITHUB_TOKEN=xxxxxxxxxx
 ```
 ### Recaptcha 
 
-To use the recaptcha this template has built-in, go to [Google reCaptcha](https://www.google.com/recaptcha/admin/create) and create one. Add your site to authorized domains (and you may want to add localhost for testing).
+To use the recaptcha this template has built-in, go to [Google reCaptcha](https://www.google.com/recaptcha/admin/create) and create one. Add your site to authorized domains (and you may want to add `localhost` for testing).
 
-**_IMPORTANT_** Your reCaptcha must be v2 to work with Netlify. A v3 reCaptcha, which Google defaults to, will error.
+**_IMPORTANT_** Your **reCaptcha must be v2** to work with Netlify. A v3 reCaptcha, which Google defaults to, will error.
 
 Add your public key to your site's data on `data/config.js`.
 
-When deploying on Netlify, add the private key to their "Build environment variables." Use the following names:
+When deploying on Netlify, add your keys (including private) to their "Build environment variables." Use the following names:
 
 ```bash
 SITE_RECAPTCHA_KEY=xxxxx
