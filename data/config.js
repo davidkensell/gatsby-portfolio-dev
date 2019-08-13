@@ -24,7 +24,7 @@ module.exports = {
 		city: 'Los Angeles',
 		region: 'California',
 		country: 'USA',
-		zipCode: '90004',
+		zipCode: '90230',
 	},
 	contact: {
 		email: 'dk@davidkensell.com',
