@@ -71,9 +71,6 @@ export const Projects = () => (
 										))}
 									</p>
 								</Content>
-								<Stats>
-									{node.homepageUrl && <p><a href={node.homepageUrl} target="_blank" rel="noopener noreferrer">demo</a></p>}
-								</Stats>
 							</Card>
 						</Item>
 					))}
